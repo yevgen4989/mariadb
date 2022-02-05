@@ -97,7 +97,7 @@ innodb_open_files                       = {{ getenv "MYSQL_INNODB_OPEN_FILES" "1
 innodb_purge_threads                    = {{ getenv "MYSQL_INNODB_PURGE_THREADS" "4" }}
 innodb_read_io_threads                  = {{ getenv "MYSQL_INNODB_READ_IO_THREADS" "4" }}
 innodb_stats_on_metadata                = {{ getenv "MYSQL_INNODB_STATS_ON_METADATA" "OFF" }}
-innodb_strict_mode                      = {{ getenv "MYSQL_INNODB_STRICT_MODE" "OFF" }}
+innodb_strict_mode                      = {{ getenv "MYSQL_INNODB_STRICT_MODE" "ON" }}
 innodb_write_io_threads                 = {{ getenv "MYSQL_INNODB_WRITE_IO_THREADS" "4" }}
 
 performance_schema                      = {{ getenv "MYSQL_PERFORMANCE_SCHEMA" "OFF" }}

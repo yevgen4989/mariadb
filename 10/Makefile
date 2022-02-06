@@ -6,7 +6,7 @@ MARIADB_VER_MINOR = $(shell echo "${MARIADB_VER}" | grep -oE '^[0-9]+\.[0-9]+')
 GALERA_VER ?=
 WSREP_VER ?= $(shell echo "${GALERA_VER}" | grep -oE '^[0-9]+')
 
-ALPINE_VER ?= 3.12
+ALPINE_VER ?= 3.15
 
 NPROC =
 
@@ -27,7 +27,7 @@ ifneq ($(STABILITY_TAG),)
     endif
 endif
 
-REPO = wodby/mariadb
+REPO = yevgen4989/mariadb
 NAME = mariadb-$(MARIADB_VER_MINOR)
 
 .PHONY: build buildx-build buildx-push buildx-build-amd64 test push shell run start stop logs clean release
